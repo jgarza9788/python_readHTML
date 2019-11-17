@@ -1,18 +1,18 @@
-# import urllib3
-# http = urllib3.PoolManager()
+import urllib3
+http = urllib3.PoolManager()
 
-# def getHTML(url):
-#     response = http.request('GET', url)
-#     return response.data
+def getHTML(url):
+    response = http.request('GET', url)
+    return response.data
 
-# if __name__ == "__main__":
-#     print(getHTML("www.google.com"))
+if __name__ == "__main__":
+    print(getHTML("www.google.com"))
 
-# import requests
-# r =  requests.get("https://api.github.com/user", auth=('username','password'))
-# r.status_code
+import requests
+r =  requests.get("https://api.github.com/user", auth=('username','password'))
+r.status_code
 
-# r.headers['content-type']
-# r.encoding
-# print(r.text)
-# print(r.json())
+r.headers['content-type']
+r.encoding
+print(r.text)
+print(r.json())
